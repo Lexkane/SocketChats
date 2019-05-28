@@ -1,0 +1,19 @@
+[package]
+name = "web_sockets"
+version = "0.1.0"
+authors = ["Lexkane <alexkane.vip@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ws = "0.8.1"
+
+
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+
+lto = true
+codegen-units = 1
+opt-level = 'z' 
